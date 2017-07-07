@@ -3,13 +3,12 @@
 	<JavaScript File="SplashPage.js" />
 	<Image Layer="Background" File="../Assets/background.jpg" StretchMode="Fill" Opacity=".4" />
 
-	<ScrollView>
-		<StackPanel ItemSpacing="10" Padding="10" >
+		<StackPanel ItemSpacing="60" Padding="10" >
 			<HeaderText Value="TestCase Application" />
 			<Separator />
 
 			<Panel HitTestMode="LocalBoundsAndChildren" >
-					<Text Color="White" Value="Hent et bilde    [Fikk ikke til denne]" Margin="20" />
+					<RegText Value="Hent et bilde      [Fikk ikke til denne..]" />
 					<WhilePressed>
 						<Scale Factor=".97" Duration=".06" Easing="QuadraticOut" />
 					</WhilePressed>
@@ -18,7 +17,7 @@
 			<Separator />
 
 			<Panel HitTestMode="LocalBoundsAndChildren" Clicked="{goToFilterPage}">
-					<Text Color="White" Value="Filtermeny" Margin="20" />
+					<RegText Value="Filtermeny"/>
 					<WhilePressed>
 						<Scale Factor=".97" Duration=".06" Easing="QuadraticOut" />
 					</WhilePressed>
@@ -26,14 +25,5 @@
 
 			<Separator />
 
-			<Panel HitTestMode="LocalBoundsAndChildren">
-					<Image Height="150" File="../Assets/background.jpg" StretchMode="UniformToFill"  />
-					<WhilePressed>
-						<Scale Factor=".97" Duration=".06" Easing="QuadraticOut"/>
-					</WhilePressed>
-			</Panel>
-
-			<Separator />
 		</StackPanel>
-	</ScrollView>
 </Page>
