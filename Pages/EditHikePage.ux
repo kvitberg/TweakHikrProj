@@ -1,0 +1,24 @@
+<Page ux:Class="EditHikePage" Background="#9fa8a3">
+	<Router ux:Dependency="router" />
+	<JavaScript File="EditHikePage.js" />
+	<Image Layer="Background" File="../Assets/background.jpg" StretchMode="Fill" Opacity=".4" />
+
+	<ScrollView>
+		<StackPanel>
+			<HeaderText Value="{name}" />
+			<Separator />
+
+			<Panel HitTestMode="LocalBoundsAndChildren">
+			    <Image Margin="10" Height="250" File="../Assets/background.jpg" StretchMode="UniformToFill"  />
+			</Panel>
+
+      <Separator />
+
+			<Grid ColumnCount="2">
+				<custom.Button Text="Apply" Clicked="{goBack}" />
+				<custom.Button Text="Cancel" Clicked="{goBack}" />
+			</Grid>
+
+		</StackPanel>
+	</ScrollView>
+</Page>

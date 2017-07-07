@@ -1,0 +1,13 @@
+<Panel ux:Class="custom.Button" Margin="5" Padding="2" >
+  <string ux:Property="Text" />
+
+  <Rectangle Layer="Background" Color="#c5d5cb" CornerRadius="4">
+    <DropShadow Angle="90" Distance="1" Spread="0.2" Size="1" Color="#00000060" />
+  </Rectangle>
+
+  <Text Value="{ReadProperty Text}" FontSize="16" Margin="10" TextAlignment="Center" Color="White"/>
+
+  <WhilePressed>
+    <Scale Factor=".97" Duration=".06" Easing="QuadraticOut" />
+  </WhilePressed>
+</Panel>

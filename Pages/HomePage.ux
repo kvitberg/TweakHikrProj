@@ -1,0 +1,26 @@
+<Page ux:Class="HomePage" Background="#9fa8a3">
+	<Router ux:Dependency="router" />
+	<JavaScript File="HomePage.js" />
+	<Image Layer="Background" File="../Assets/background.jpg" StretchMode="Fill" Opacity=".3" />
+
+	<ScrollView>
+		<StackPanel>
+			<HeaderText Value="Filter menu" />
+
+			<Separator />
+
+			<Each Items="{hikes}">
+				<Panel HitTestMode="LocalBoundsAndChildren" Clicked="{goToImage}">
+          <Text Color="White" Value="{name}" Margin="20" TextAlignment="Center"/>
+					<WhilePressed>
+						<Scale Factor=".97" Duration=".06" Easing="QuadraticOut" />
+					</WhilePressed>
+        </Panel>
+				<Separator />
+			</Each>
+
+			<custom.Button Text="Cancel" Clicked="{goToHomePage}" />
+
+		</StackPanel>
+	</ScrollView>
+</Page>
