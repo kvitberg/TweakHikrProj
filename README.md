@@ -10,3 +10,8 @@ For å sitere Fuse Tools sin beskrivelse av hva Promises er:
 
 	Image processing:
 	http://camanjs.com/guides/#BasicUsage
+
+TODO's:
+	Image filters
+	Apply button in filters menu
+	Get image from Cameraroll

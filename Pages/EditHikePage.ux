@@ -15,7 +15,7 @@
       <Separator />
 
 			<Grid ColumnCount="2">
-				<custom.Button Text="Apply" Clicked="{goBack}" />
+				<custom.Button Text="Apply"  />
 				<custom.Button Text="Cancel" Clicked="{goBack}" />
 			</Grid>
 

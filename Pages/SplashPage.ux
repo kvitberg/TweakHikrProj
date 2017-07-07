@@ -8,7 +8,7 @@
 			<HeaderText Value="TestCase Application" />
 			<Separator />
 
-			<Panel HitTestMode="LocalBoundsAndChildren" Clicked="{goToFilterPage}">
+			<Panel HitTestMode="LocalBoundsAndChildren" >
 					<Text Color="White" Value="Hent et bilde    [Fikk ikke til denne]" Margin="20" />
 					<WhilePressed>
 						<Scale Factor=".97" Duration=".06" Easing="QuadraticOut" />
